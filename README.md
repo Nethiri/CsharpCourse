@@ -2,12 +2,12 @@
 
 In diesem Repository werden die LiaScript basierten Unterlagen der Vorlesung "Softwareentwicklung" an der TU Bergakademie Freiberg gehostet. Die Veranstaltung umfasst wöchentlich 2 Vorlesungen und zugehörige Übungen.
 
-Der Master zeigt jeweils den Foliensatz des vergangenen Jahres, die Dokumente der aktuellen Vorlesung sind in eigenen branches enthalten.
+Der Master zeigt jeweils den Foliensatz des vergangenen Jahres, die Dokumente der aktuellen Vorlesung sind in eigenen branches enthalten:
 
 | Semester  | Branch   | dev Branch  |
 | --------- | -------- | ----------- |
 | SoSe 2019 | master   |             |
-| SoSe 2020 | SoSe2020 | SoSe2020dev |
+| SoSe 2020 | [SoSe2020](https://github.com/SebastianZug/CsharpCourse/tree/SoSe2020) | [SoSe2020dev](https://github.com/SebastianZug/CsharpCourse/tree/SoSe2020dev) |
 
 
 # Übersicht zur Vorlesung (SoSe 2019)
