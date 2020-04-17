@@ -32,8 +32,7 @@ jobs:
       - name: Run Pandoc for all lecture files
         uses: docker://pandoc/latex:2.9
         with:
-          args: -f markdown --toc --top-level-division=chapter -V geometry:margin=2cm -V linkcolor:blue --pdf-engine=xelatex --listings -H .github/workflows/listings.tex --include-in-header=.github/workflows/header.tex
- --output=output/script.pdf ${{ env.FILELIST }}
+          args: -f markdown --toc --top-level-division=chapter -V geometry:margin=2cm -V linkcolor:blue --pdf-engine=xelatex --listings -H .github/workflows/listings.tex --include-in-header=.github/workflows/header.tex --output=output/script.pdf ${{ env.FILELIST }}
         # Unser Skript wird in den Ordner output gespeichert und zum Download
         # angeboten
       - uses: actions/upload-artifact@master
