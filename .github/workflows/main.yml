@@ -8,7 +8,7 @@ name: GeneratePdf
 on:
   push:
     branches:
-      - SoSe2020
+      - ScriptGenerationBug
 
 jobs:
   convert_via_pandoc:
@@ -17,7 +17,7 @@ jobs:
       - name: Check out current repository
         uses: actions/checkout@v2
         with:
-          ref: SoSe2020
+          ref: ScriptGenerationBug
         # Hier ist es jetzt etwas kniffliger. Wir wollen an pandoc eine Liste
         # alle relevanten Dateien übergeben. Dazu brauchen wir eine sogenannte
         # Umgebungsvariable die wir FILELIST nennen. Ihr werden alle Dateinamen
@@ -25,14 +25,15 @@ jobs:
       - name: Run preprocessing and set environment variables
         run : |
           python3 .github/workflows/preprocessing.py
-          echo ::set-env name=FILELIST::$(ls *.mdx)
+          echo "::set-env name=FILELIST::$(printf '"%s" ' *.mdx)"
           mkdir output
         # Aufruf eines Standard-Docker Containers, in dem pandoc (und Latex)
         # läuft.
       - name: Run Pandoc for all lecture files
         uses: docker://pandoc/latex:2.9
         with:
-          args: -f markdown --toc --top-level-division=chapter -V geometry:margin=2cm -V linkcolor:blue --pdf-engine=xelatex --listings -H .github/workflows/listings.tex --output=output/script.pdf ${{ env.FILELIST }}
+          args: -f markdown --toc --top-level-division=chapter -V geometry:margin=2cm -V linkcolor:blue --pdf-engine=xelatex --listings -H .github/workflows/listings.tex --include-in-header=.github/workflows/header.tex
+ --output=output/script.pdf ${{ env.FILELIST }}
         # Unser Skript wird in den Ordner output gespeichert und zum Download
         # angeboten
       - uses: actions/upload-artifact@master
