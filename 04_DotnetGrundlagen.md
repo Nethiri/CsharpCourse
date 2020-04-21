@@ -70,7 +70,7 @@ print(arr_squared)
     [( )] funktional
 
 **4. Das .NET Framework beinhaltet nicht nur Common Language Runtime (CLR)
-sondern auch die Entwicklungswerkzeuge und Klassenbibliotheken.**
+    sondern auch die Entwicklungswerkzeuge und Klassenbibliotheken.**
 
     [[falsch|(richtig)]]
 
@@ -87,7 +87,6 @@ sondern auch die Entwicklungswerkzeuge und Klassenbibliotheken.**
     [(X)] ein Assembly
     [( )] eine ausführbare Methode
     [( )] eine ausführbare Klasse
-
 
 **7. Bei Console.WriteLine() sind Console und WriteLine ...**
 
