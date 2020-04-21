@@ -64,33 +64,36 @@ print(arr_squared)
 
 **3. Welche der folgenden Elemente der Paradigmen wird nicht von C# unterstützt?**
 
-[( )] procedural
-[( )]objektorientiert
-[(X)] logisch
-[( )] funktional
+    [( )] procedural
+    [( )] objektorientiert
+    [(X)] logisch
+    [( )] funktional
 
-**4. Das .NET Framework besteht aus Common Language Runtime (CLR), Klassenbibliotekt und Kompiler.**
-[[falsch|(richtig)]]
+**4. Das .NET Framework beinhaltet nicht nur Common Language Runtime (CLR)
+sondern auch die Entwicklungswerkzeuge und Klassenbibliotheken.**
 
-**5. Die Ausgabe wird in C# ausgeführt durch...**
+    [[falsch|(richtig)]]
 
-[( )] System.out.print();
-[( )] print();
-[(X)] System.Console.WriteLine();
-[( )] printf();
+**5. Die Ausgabe aus einem C#-Programm ist unter anderem mit der folgenden Anweisung möglich:**
 
-**6. Wärend der Kompilierung werden C# Programme physisch verpackt in...**
+    [( )] System.out.print();
+    [( )] print();
+    [(X)] System.Console.WriteLine();
+    [( )] printf();
 
-[( )] Namespaces
-[(X)] Assemblies
-[( )] Methode
-[( )] Klasse
+**6. Im Ergebnis der Compilierung eines C#-Programms entsteht:**
+
+    [( )] ein Namespace
+    [(X)] ein Assembly
+    [( )] eine ausführbare Methode
+    [( )] eine ausführbare Klasse
+
 
 **7. Bei Console.WriteLine() sind Console und WriteLine ...**
 
-[( )] Namespace und Member
-[(X)] Klasse und Methode
-[( )] Assembly und Klasse
+    [( )] Namespace und Member
+    [(X)] Klasse und Methode  
+    [( )] Assembly und Klasse
 
 ## Einschub: Programmierparadigmen
 
