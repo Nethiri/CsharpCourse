@@ -25,15 +25,66 @@ Die interaktive Form ist unter diese Link zu finden ->
 
 ## 7 Fragen in 7 Minuten
 
-**1. Jetzt sind Sie dran ...**
+**1.** Sie sind ein Entwickler in einem Videospielkonzern und sollen einen neuen NPC vom Type Goblin erstellen. Die Funktionen eines NPC's sind bereits vorhanden und müssen lediglich vererbt werden mit Ihren spezifischen Änderungen. Was für ein Konzept würden Sie verwenden?
 
-**2. Jetzt sind Sie dran ...**
+[(X)] Class
+[( )] Struct  
 
-**3. Jetzt sind Sie dran ...**
+**2.** Eine Kindergarten möchte eine Lernapp entwickeln lassen, um den Kindern das Zuordnen von Tieren zu ihren charakteristischen Geräuchen zu erleichtern.  
+Sie wurden Beauftragt diese App für den Kindergarten zu schreiben.  
+Ein Tier hat folgende Eigenschaften:  
+  1. Name  
+  2. Geräusch  
+Welches Konzept würde sich für das Umsetzen der App am Besten anbieten?
 
-**4. Jetzt sind Sie dran ...**
+[( )] Class
+[(X)] Sturct
 
-**5. Jetzt sind Sie dran ...**
+**3.** Auf den Typ oder Member kann von jedem Code in der gleichen Assembly oder einer anderen Assembly, die darauf verweist, zugegriffen werden.
+
+[( )] private 
+[( )] internal 
+[(X)] public  
+
+**4.** Was wird für "b" auf die Konsole ausgegeben?
+
+```csharp
+struct Location { 
+  public int x, y;
+  public Location(int x, int y) 
+    { 
+      this.x = x; 
+      this.y = y; 
+    } 
+  }
+LocationA = new Location(20, 20); 
+LocationB = LocationA;  
+LocationA.x = 100;
+System.Console.WriteLine(LocationB.x); 
+```
+
+[(X)] 20
+[( )] 100
+
+**5.** Wie viele Kekse sind in "KookieJar2" drin?
+
+```csharp
+class CookieJar {
+  public int schoki, vanille;
+  public CookieJar(int schokiInput, int vanilleInput)
+    {
+    this.schoki = schokiInput;
+    this.vanille = vanilleInput;
+    }
+  }
+CookieJar1 = new CookieJar(50, 74);
+CookieJar2 = CookieJar1;
+CookieJar1.vanille = 30;
+System.Console.WriteLine(CookieJar2.vanille);
+```
+
+[( )] 74 Cookies
+[(X)] 30 Cookies
 
 **6. Jetzt sind Sie dran ...**
 
